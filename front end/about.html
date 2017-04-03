@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>About - Overlooked Videos</title>
+
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+		<meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script type="text/javascript" src="script.js"></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+      
+                <div class="collapse navbar-collapse"  id="bs-example-navbar-collapse-1">
+                    <a class="coolTitle" href="index.html"><img id="logo_home_link" src="images/logowithwords.svg"></a>
+
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="makeAccount.html">Make Account</a>
+
+                        </li>
+                        <li>
+                            <a href="signIn.html">Sign In</a>
+
+                        </li>
+
+                       <li class="upper-links dropdown"><a class="links" id="overridelinks" href="#">Video Categories</a>
+    	                    <ul class="dropdown-menu">
+    	                        <li class="profile-li"><a class="profile-links" href="#">Movies</a></li>
+    	                        <li class="profile-li"><a class="profile-links" href="#">Music</a></li>
+    	                        <li class="profile-li"><a class="profile-links" href="#">Games</a></li>
+    	                        <li class="profile-li"><a class="profile-links" href="#">News</a></li>
+    	                        <li class="profile-li"><a class="profile-links" href="#">TV</a></li>
+    	                        <li class="profile-li"><a class="profile-links" href="#">Misc</a></li>
+    	                    </ul>
+                    	</li>
+
+                        <li class="upper-links dropdown"><a class="links" id="overridelinks" href="#">Video Search</a>
+                            <ul class="dropdown-menu">
+    	                         <li class="profile-li"><a class="profile-links" href="basicSearch.html">Search by title</a></li>
+                                <li class="profile-li"><a class="profile-links" href="advancedSearch.html">Advanced Search</a></li>
+    	                    </ul>
+                        </li>
+                    </ul>
+                    <div class="aboutBut">
+                        <a href="about.html" id="aboutButton" style="text-decoration: underline; color: white;">About</a>
+                    </div>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+    
+
+    <div class="container">        
+             <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">
+                        About the web app & our team
+                    </h1>
+                </div>
+            </div>
+
+
+            <hr>
+
+            <h3>Overview</h3>
+            <ul>
+                <li>
+                    There are millions of videos on Youtube. Many of these videos may have high quality and received overall positive reviews, but are not well known or have low numbers of views. 
+                </li>
+
+                <li>
+                    This web app can display these not well known Youtube videos in a random fashion. 
+                </li>
+
+                <li>
+                    The user can press the "Play Random Video" button on the Home page and a random video will start playing. If the user does not like it, they can press the button again to skip to another random video selected by the random selection algorithm.
+                </li>
+
+                <li>
+                    The selection algorithm is based on video properties such as likes, dislikes, views, and comments.
+                </li>
+
+                <li>
+                    Video Search suggests less viewed but high quality videos based on user input. User can search by title or do an advanced search.
+                </li>
+
+                <li>
+                    Video Categories can found through the navigation bar or advanced search.
+                </li>
+            </ul>
+
+             <hr>
+
+            <h3>Overlooked Videos</h3>
+            <ul>
+                <li>
+                    is designed to help small or medium sized YouTubers (Youtube channels) by offering an alternative platform which users can view and enjoy their content.
+                </li>
+
+                <li>
+                    can help users easily find high quality videos they may be interested in but find difficult to access since they are listed deep in Youtube’s search results.
+                </li>
+
+                <li>
+                    allows users to easily and quickly browse highly-liked and commented YouTube videos that have low view counts.
+                </li>
+            </ul>
+
+            <h3>Functionality & Impact</h3>
+            <ul>
+                <li>
+                    For Overlooked Videos to recommend videos based on users’ interests, it utilizes algorithms that involve data mining, machine learning, and searching.
+                </li>
+
+                <li>
+                    Database: 
+                </li>
+
+                <li>
+                    Front-end: HTML, CSS
+                </li>
+
+                <li>
+                    Back-end: JavaScript, Youtube API
+                </li>
+
+                <li>
+                    Frameworks: Bootstrap
+                </li>
+
+                <li>
+                    Web communications protocol: 
+                </li>
+            </ul>
+
+            <hr>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Our Team</h2>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center">
+                <h3>
+                    Allan Hong
+                </h3>
+                <p>Developed the front-end</p>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center">
+                <h3>
+                    Ryan Li
+                </h3>
+                <p>Developed the front-end</p>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center">
+                <h3>
+                    Mohammad Akhtar
+                </h3>
+                <p>Developed the back-end</p>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center">
+                <h3>
+                    Stephen Nguyen
+                </h3>
+                <p>Developed the back-end</p>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center">
+                <h3>
+                    David Dicioco
+                </h3>
+                <p>Developed the front-end</p>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center">
+                <h3>
+                    Jun Yan
+                </h3>
+                <p>Developed the back-end</p>
+            </div>
+        </div>
+
+        <br><br>
+
+            <!--
+			<h3>Group members:</h3>
+            <ul>
+                <li>Allan Hong</li>
+                <li>Ryan Li</li>
+                <li>Mohammad Akhtar</li>
+                <li>Stephen Nguyen</li>
+                <li>David Dicioco</li>
+                <li>Jun Yan</li>
+            </ul>
+            -->
+
+		</div>
+		</div>
+		</div>
+		</div>
+	</body>
+</html>
