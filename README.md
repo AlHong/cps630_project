@@ -1,7 +1,7 @@
 CPS 630 Project.
 
 Group Members: 
-Jun Yan
+Jun Yan\n
 Allan hong
 Ryan Li
 David Dicioco
