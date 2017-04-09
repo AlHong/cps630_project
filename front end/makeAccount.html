@@ -1,108 +1,108 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
 
-<html>
-	<head>
-		<title>Make Account - Overlooked Videos</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPS630: Web Applications</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </head>
 
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <body ng-app="overlookedVideosApp">
+    <nav class="navbar navbar-inverse" id="topNavBar" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <a class="coolTitle" href="index.html"><img id="logo_home_link" src="images/logowithwords.svg"></a>
+          <ul class="nav navbar-nav">
+            <li><a href="makeAccount.html">Make Account</a></li>
+            <li><a href="signIn.html">Sign In</a></li>
+            <li class="upper-links dropdown">
+              <a href="#" class="links dropdown-toggle" id="overridelinks" data-toggle="dropdown">Video Categories<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="profile-li"><a class="profile-links" href="#">Movies</a></li>
+                <li class="profile-li"><a class="profile-links" href="#">Music</a></li>
+                <li class="profile-li"><a class="profile-links" href="#">Games</a></li>
+                <li class="profile-li"><a class="profile-links" href="#">News</a></li>
+                <li class="profile-li"><a class="profile-links" href="#">TV</a></li>
+                <li class="profile-li"><a class="profile-links" href="#">Misc</a></li>
+              </ul>
+            </li>
+            <li class="upper-links dropdown">
+              <a href="#" class="links dropdown-toggle" id="overridelinks" data-toggle="dropdown">Video Search<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="profile-li"><a class="profile-links" href="basicSearch.html">Search by title</a></li>
+                <li class="profile-li"><a class="profile-links" href="advancedSearch.html">Advanced Search</a></li>
+              </ul>
+            </li>
+          </ul>
 
-		<link rel="stylesheet" type="text/css" href="style.css">
+          <div class="aboutBut">
+            <a href="about.html" id="aboutButton">About</a>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-		<script type="text/javascript" src="script.js"></script>
+    <div id="layout">
+      <div id="header">
+        <h1 id="logo"><a href="#" title="#"><span>Make Account</span></a></h1>
+      </div>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-
-		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	</head>
-
-	<body ng-app="overlookedVideosApp">
-		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!-- <a class="navbar-brand" style="text-decoration: none; color: #9d9d9d;" href="index.html">Home</a> -->
+      <div class="redbox">
+        <div class="rbcontent">
+          <div id="leftpanel">  			
+            <div class="leftcontent">
+              <form action="" class="form-horizontal">
+                <br>
+                <div class="form-group">
+                  <label class="control-label col-sm-4" for="username">Username:</label>
+                  <div class="col-sm-8">
+                    <input type="text" style="width: 50%" ng-model="username" class="form-control" id="username" placeholder="Enter your username">
+                  </div>
                 </div>
-      
-                <div class="collapse navbar-collapse"  id="bs-example-navbar-collapse-1">
-                	<a class="coolTitle" href="index.html"><img id="logo_home_link" src="images/logowithwords.svg"></a>
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a href="makeAccount.html" style="text-decoration: underline; color: white;">Make Account</a>
-
-                        </li>
-                        <li>
-                            <a href="signIn.html">Sign In</a>
-
-                        </li>
-
-                       <li class="upper-links dropdown"><a class="links" id="overridelinks" href="#">Video Categories</a>
-    	                    <ul class="dropdown-menu">
-    	                        <li class="profile-li"><a class="profile-links" href="#">Movies</a></li>
-    	                        <li class="profile-li"><a class="profile-links" href="#">Music</a></li>
-    	                        <li class="profile-li"><a class="profile-links" href="#">Games</a></li>
-    	                        <li class="profile-li"><a class="profile-links" href="#">News</a></li>
-    	                        <li class="profile-li"><a class="profile-links" href="#">TV</a></li>
-    	                        <li class="profile-li"><a class="profile-links" href="#">Misc</a></li>
-    	                    </ul>
-                    	</li>
-
-                        <li class="upper-links dropdown"><a class="links" id="overridelinks" href="#">Video Search</a>
-                            <ul class="dropdown-menu">
-    	                        <li class="profile-li"><a class="profile-links" href="basicSearch.html">Search by title</a></li>
-    	                        <li class="profile-li"><a class="profile-links" href="advancedSearch.html">Advanced Search</a></li>
-    	                    </ul>
-                        </li>
-                    </ul>
-                    <div class="aboutBut">
-                        <a href="about.html" id="aboutButton">About</a>
-                    </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-4" for="email">E-mail:</label>
+                  <div class="col-sm-8">
+                    <input type="text" style="width: 50%" ng-model="email" class="form-control" id="email" placeholder="Enter your e-mail address">
+                  </div>
                 </div>
-                <!-- /.navbar-collapse -->
+                <div class="form-group">
+                  <label class="control-label col-sm-4" for="password">Password:</label>
+                  <div class="col-sm-8">
+                    <input type="text" style="width: 50%" ng-model="password" class="form-control" id="password" placeholder="Enter your password">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-4" for="password2">Confirm Password:</label>
+                  <div class="col-sm-8">
+                    <input type="text" style="width: 50%" ng-model="password2" class="form-control" id="password2" placeholder="Enter your password">
+                  </div>
+                </div>
+                <input type="submit" class="btn btn-primary" id="createAccountButton" value="Create Account">
+              </form>
             </div>
-            <!-- /.container -->
-        </nav>
+          </div>
+          <div id="rightpanel">
+            <div id="rightcontent">
+            </div>
+          </div>	
+        </div>
+        <div class="rbbot"></div>
+      </div>
+    </div>
 
-
-
-			<form action="" class="form-horizontal">
-				<br><br><br>
-				<div class="form-group">
-					<label class="control-label col-sm-2" for="username">Username:</label>
-					<div class="col-sm-10">
-    					<input type="text" style="width: 50%" ng-model="username" class="form-control" id="username" placeholder="Enter your username">
-    				</div>
-				</div>
-
-				<div class="form-group">
-					<label class="control-label col-sm-2" for="email">E-mail:</label>
-					<div class="col-sm-10">
-    					<input type="text" style="width: 50%" ng-model="email" class="form-control" id="email" placeholder="Enter your e-mail address">
-    				</div>
-				</div>
-
-				<div class="form-group">
-					<label class="control-label col-sm-2" for="password">Password:</label>
-					<div class="col-sm-10">
-    					<input type="text" style="width: 50%" ng-model="password" class="form-control" id="password" placeholder="Enter your password">
-    				</div>
-				</div>
-
-				<div class="form-group">
-					<label class="control-label col-sm-2" for="password2">Confirm Password:</label>
-					<div class="col-sm-10">
-    					<input type="text" style="width: 50%" ng-model="password2" class="form-control" id="password2" placeholder="Enter your password">
-    				</div>
-				</div>
-
-				<input type="submit" class="btn btn-primary" id="createAccountButton" value="Create Account">
-			</form>
-
-		</div>
-	</body>
+    <div id="footer"></div>
+  </body>
 </html>

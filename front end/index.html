@@ -1,165 +1,144 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
 
-<html>
-	<head>
-		<title>Home - Overlooked Videos</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPS630: Web Applications</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </head>
 
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <body>
 
-		<meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+      <nav class="navbar navbar-inverse" id="topNavBar" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <a class="coolTitle" href="index.html"><img id="logo_home_link" src="images/logowithwords.svg"></a>
+            <ul class="nav navbar-nav">
+              <li><a href="makeAccount.html">Make Account</a></li>
+              <li><a href="signIn.html">Sign In</a></li>
+              <li class="upper-links dropdown">
+                <a href="#" class="links dropdown-toggle" id="overridelinks" data-toggle="dropdown">Video Categories<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li class="profile-li"><a class="profile-links" href="#">Movies</a></li>
+                  <li class="profile-li"><a class="profile-links" href="#">Music</a></li>
+                  <li class="profile-li"><a class="profile-links" href="#">Games</a></li>
+                  <li class="profile-li"><a class="profile-links" href="#">News</a></li>
+                  <li class="profile-li"><a class="profile-links" href="#">TV</a></li>
+                  <li class="profile-li"><a class="profile-links" href="#">Misc</a></li>
+                </ul>
+              </li>
+              <li class="upper-links dropdown">
+                <a href="#" class="links dropdown-toggle" id="overridelinks" data-toggle="dropdown">Video Search<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li class="profile-li"><a class="profile-links" href="basicSearch.html">Search by title</a></li>
+                  <li class="profile-li"><a class="profile-links" href="advancedSearch.html">Advanced Search</a></li>
+                </ul>
+              </li>
+            </ul>
 
-		<link rel="stylesheet" type="text/css" href="style.css">
+            <div class="aboutBut">
+              <a href="about.html" id="aboutButton">About</a>
+            </div>
+          </div>
+        </div>
+      </nav>
 
-		<script type="text/javascript" src="script.js"></script>
+    <div id="layout">
+      <div id="header">
+        <h1 id="logo"><a href="#" title="#"><span>Home</span></a></h1>
+      </div>
+      
+      <form id="searchField" action="" class="form-horizontal">
+        <div class="mainBodyContent">
+          <div class="form-group">
+            <div class="flipkart-navbar-search smallsearch col-sm-8 col-xs-11">
+              <div class="row">
+                <input style="margin-left: 40%; width: 50%;" class="flipkart-navbar-input col-xs-11" type="" placeholder="Search video by title" name="">
+                <button class="flipkart-navbar-button col-xs-1">
+                  <span class="glyphicon glyphicon-search" aria-hidden="true">
+                </button>                          
+              </div>
+            </div>   
+          </div>    
+        </div>
+      </form>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <header>
+          <div class="header-content">
+            <div class="header-content-inner">
+              <h1 id="homeHeading">The best way to find overlooked quality Youtube videos</h1>
+              <hr>
+              <p>Overlooked Videos can allow you to easily search for and play highly liked and overlooked Youtube videos. To get started, just use the search features.</p>
+              <a href="#about" class="btn btn-primary btn-xl page-scroll">Learn More</a>
+            </div>
+          </div>
+        </header>
+		 
+        <section class="bg-primary" id="about">
+          <div class="container">
+            <div class="row">
+	      <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">Browse and play videos with ease!</h2>
+                <hr class="light">
+                <p class="text-faded">Overlooked Videos has everything you need to find and play great Youtube videos! You can also make an account to start a collection of your favourite videos!</p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	</head>
-
-	<body>
-		 <nav id="topNavBar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-	        <div class="container">
-	            <!-- Brand and toggle get grouped for better mobile display -->
-	            <div class="navbar-header">
-	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-	                    <span class="sr-only">Toggle navigation</span>
-	                    <span class="icon-bar"></span>
-	                    <span class="icon-bar"></span>
-	                    <span class="icon-bar"></span>
-	                </button>
-	                <!--<a class="navbar-brand" href="index.html">Home</a>-->
-	                
-
-	            </div>
-	  
-	            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	            	<a class="coolTitle" href="index.html"><img id="logo_home_link" src="images/logowithwords.svg"></a>
-	                <ul class="nav navbar-nav">
-	                    <li>
-	                        <a href="makeAccount.html">Make Account</a>
-
-	                    </li>
-	                    <li>
-	                        <a href="signIn.html">Sign In</a>
-
-	                    </li>
-
-	                   <li class="upper-links dropdown"><a class="links" id="overridelinks" href="#">Video Categories</a>
-		                    <ul class="dropdown-menu">
-		                        <li class="profile-li"><a class="profile-links" href="#">Movies</a></li>
-		                        <li class="profile-li"><a class="profile-links" href="#">Music</a></li>
-		                        <li class="profile-li"><a class="profile-links" href="#">Games</a></li>
-		                        <li class="profile-li"><a class="profile-links" href="#">News</a></li>
-		                        <li class="profile-li"><a class="profile-links" href="#">TV</a></li>
-		                        <li class="profile-li"><a class="profile-links" href="#">Misc</a></li>
-		                    </ul>
-	                	</li>
-
-	                    <li class="upper-links dropdown"><a class="links" id="overridelinks" href="#">Video Search</a>
-	                         <ul class="dropdown-menu">
-    	                        <li class="profile-li"><a class="profile-links" href="basicSearch.html">Search by title</a></li>
-    	                        <li class="profile-li"><a class="profile-links" href="advancedSearch.html">Advanced Search</a></li>
-    	                    </ul>
-	                    </li>
-	                </ul>
-	                <div class="aboutBut">
-	                    <a href="about.html" id="aboutButton">About</a>
-	                </div>
-	            </div>
-	            <!-- /.navbar-collapse -->
-	        </div>
-	        <!-- /.container -->
-	    </nav>
-
-    		<!--
-    		<img id="logo_icon" src="images/overlookedicon.svg">
-			<h2 id="logo_title">Overlooked Videos</h2>
-			-->
-
-			<form id="searchField" action="" class="form-horizontal">
-				<div class="mainBodyContent">
-                        <div class="form-group">
-                            <div class="flipkart-navbar-search smallsearch col-sm-8 col-xs-11">
-                                <div class="row">
-                                    <input style="margin-left: 40%; width: 50%;" class="flipkart-navbar-input col-xs-11" type="" placeholder="Search video by title" name="">
-                                        
-                                    <button class="flipkart-navbar-button col-xs-1">
-                                        <span class="glyphicon glyphicon-search" aria-hidden="true">
-                                    </button>                                
-                                </div>
-                            </div>   
-                        </div>    
+        <section id="services">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Features</h2>
+                <hr class="primary">
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 text-center">
+                <div class="service-box">
+                  <img src="images/mag_glasses.svg" width="52" height="52">
+                  <h3>Search for videos</h3>
+                  <p class="text-muted">Through the search options, you can conveniently find Youtube videos with many likes and few views.</p>
+                  <button type="button" class="btn btn-primary bottomButtons" onclick="location.href='basicSearch.html';">Search for video</button>
                 </div>
-			</form>
+              </div>
+              <div class="col-lg-4 col-md-6 text-center">
+                <div class="service-box">
+                  <img src="images/staricon.svg" id="starPic" width="52" height="52">
+                  <h3>Favourite videos</h3>
+                  <p class="text-muted">With a free account, you can add videos to your list of favourite videos.</p>
+                  <button type="button" class="btn btn-primary" onclick="location.href='makeAccount.html';">Make an account</button>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 text-center">
+                <div class="service-box">
+                  <img src="images/randomdice.svg" id="dicePic" width="70" height="70">
+                  <h3>Random Video</h3>
+                  <p class="text-muted">If you want to watch any video, click the button below</p>
+                  <button type="button" class="btn btn-primary" onclick="location.href='randomVideo.html';">Play Random Video</button>
+                </div>
+              </div>
+            </div>
+         </div>
+        </section>
+    </div>
 
-			<header>
-		        <div class="header-content">
-		            <div class="header-content-inner">
-		                <h1 id="homeHeading">The best way to find overlooked quality Youtube videos</h1>
-		                <hr>
-		                <p>Overlooked Videos can allow you to easily search for and play highly liked and overlooked Youtube videos. To get started, just use the search features.</p>
-		                <a href="#about" class="btn btn-primary btn-xl page-scroll">Learn More</a>
-		            </div>
-		        </div>
-		    </header>
-
-			 
-
-			<section class="bg-primary" id="about">
-		        <div class="container">
-		            <div class="row">
-		                <div class="col-lg-8 col-lg-offset-2 text-center">
-		                    <h2 class="section-heading">Browse and play videos with ease!</h2>
-		                    <hr class="light">
-		                    <p class="text-faded">Overlooked Videos has everything you need to find and play great Youtube videos! You can also make an account to start a collection of your favourite videos!</p>
-		                </div>
-		            </div>
-		        </div>
-		    </section>
-
-		<section id="services">
-	        <div class="container">
-	            <div class="row">
-	                <div class="col-lg-12 text-center">
-	                    <h2 class="section-heading">Features</h2>
-	                    <hr class="primary">
-	                </div>
-	            </div>
-	        </div>
-	        <div class="container">
-	            <div class="row">
-	                <div class="col-lg-4 col-md-6 text-center">
-	                    <div class="service-box">
-	                        <img src="images/mag_glasses.svg" width="52" height="52">
-	                        <h3>Search for videos</h3>
-	                        <p class="text-muted">Through the search options, you can conveniently find Youtube videos with many likes and few views.</p>
-	                        <button type="button" class="btn btn-primary bottomButtons" onclick="location.href='basicSearch.html';">Search for video</button>
-	                    </div>
-	                </div>
-	                <div class="col-lg-4 col-md-6 text-center">
-	                    <div class="service-box">
-	                        <img src="images/staricon.svg" id="starPic" width="52" height="52">
-	                        <h3>Favourite videos</h3>
-	                        <p class="text-muted">With a free account, you can add videos to your list of favourite videos.</p>
-	                        <button type="button" class="btn btn-primary" onclick="location.href='makeAccount.html';">Make an account</button>
-	                    </div>
-	                </div>
-	                <div class="col-lg-4 col-md-6 text-center">
-	                    <div class="service-box">
-	                        <img src="images/randomdice.svg" id="dicePic" width="70" height="70">
-	                        <h3>Random Video</h3>
-	                        <p class="text-muted">If you want to watch any video, click the button below</p>
-	                        <button type="button" class="btn btn-primary" onclick="location.href='randomVideo.html';">Play Random Video</button>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	    </section>
-
-		</div>
-		</div>
-		</div>
-		</div>
-	</body>
+    <div id="footer"></div>
+  </body>
 </html>
