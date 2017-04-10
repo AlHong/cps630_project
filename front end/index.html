@@ -8,6 +8,7 @@
     <link href="style.css" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
     <script src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
@@ -27,6 +28,7 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <a class="coolTitle" href="index.html"><img id="logo_home_link" src="images/logowithwords.svg"></a>
             <ul class="nav navbar-nav">
+			  <li id="only_when_button"><a href="index.html">Home</a></li>
               <li><a href="makeAccount.html">Make Account</a></li>
               <li><a href="signIn.html">Sign In</a></li>
               <li class="upper-links dropdown">
@@ -126,7 +128,7 @@
                   <button type="button" class="btn btn-primary" onclick="location.href='makeAccount.html';">Make an account</button>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 text-center">
+              <div class="col-lg-4 col-md-6 text-center" id="rand_div">
                 <div class="service-box">
                   <img src="images/randomdice.svg" id="dicePic" width="70" height="70">
                   <h3>Random Video</h3>
