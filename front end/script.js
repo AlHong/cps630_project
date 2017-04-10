@@ -1,3 +1,15 @@
+function verifySignIn(){
+	var username = document.getElementById("username").value;
+	var password = document.getElementById("password").value;
+
+	//authenticate account with Youtube API
+
+
+	//alert("username: " + username + "\npassword: " + password);
+
+}
+
+
 //shows form for advanced search: has extra options to search for video, under text input for video title
 //options: likes, dislikes, views, comments
 function showAdvancedSearch()

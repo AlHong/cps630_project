@@ -1,4 +1,32 @@
 /* Everything */
+#html5Logo{
+  width: 15%;
+}
+
+#css3Logo{
+  width: 11%;
+  margin-left: 3%;
+}
+
+#bootstrapLogo{
+  width: 12%;
+  margin-left: 5%;
+}
+
+#jsLogo{
+  width: 13%;
+  margin-left: 5%;
+}
+
+#javaLogo{
+  width: 8%;
+  margin-left: 5%;
+}
+
+#mySQLlogo{
+  margin-left: 5%;
+}
+
 * {
   margin: 0;
   font: sans-serif;
