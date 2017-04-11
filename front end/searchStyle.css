@@ -1,0 +1,60 @@
+body{
+  text-align: center;
+}
+
+input[type=text] {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 70%;
+}
+.jumbotron{
+  text-align: center;
+}
+
+h4{
+  text-align: center;
+}
+
+iframe{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.stats{
+  color: maroon;
+  margin-bottom: 15px;
+  text-align: center;
+  background-color: #fff2f2;
+  font-size: 120%
+
+
+}
+
+.list-group-item{
+  background-color: #e8f8ff;
+  font-size: 120%;
+}
+
+.results{
+  display: block;
+  margin: auto;
+  width: 80%
+}
