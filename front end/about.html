@@ -16,37 +16,23 @@
     <nav class="navbar navbar-inverse" id="topNavBar" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <a class="coolTitle" href="index.html"><img id="logo_home_link" src="images/logowithwords.svg"></a>
-          <ul class="nav navbar-nav">
-            <li><a href="makeAccount.html">Make Account</a></li>
-            <li><a href="signIn.html">Sign In</a></li>
-            <li class="upper-links dropdown">
-              <a href="#" class="links dropdown-toggle" id="overridelinks" data-toggle="dropdown">Video Categories<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li class="profile-li"><a class="profile-links" href="#">Movies</a></li>
-                <li class="profile-li"><a class="profile-links" href="#">Music</a></li>
-                <li class="profile-li"><a class="profile-links" href="#">Games</a></li>
-                <li class="profile-li"><a class="profile-links" href="#">News</a></li>
-                <li class="profile-li"><a class="profile-links" href="#">TV</a></li>
-                <li class="profile-li"><a class="profile-links" href="#">Misc</a></li>
-              </ul>
-            </li>
-            <li class="upper-links dropdown">
-              <a href="#" class="links dropdown-toggle" id="overridelinks" data-toggle="dropdown">Video Search<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li class="profile-li"><a class="profile-links" href="basicSearch.html">Search by title</a></li>
-                <li class="profile-li"><a class="profile-links" href="advancedSearch.html">Advanced Search</a></li>
-              </ul>
-            </li>
-          </ul>
+             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <a class="coolTitle" href="index.html"><img id="logo_home_link" src="images/logowithwords.svg"></a>
+            <ul class="nav navbar-nav">
+        <li id="only_when_button"><a href="index.html">Home</a></li>
+              <li><a href="makeAccount.html">Make Account</a></li>
+              <li><a href="signIn.html">Sign In</a></li>
+           
+              <li><a class="profile-links" href="basicSearch.html">Search</a></li>
+
+            </ul>
 
           <div class="aboutBut">
             <a href="about.html" id="aboutButton">About</a>
@@ -75,8 +61,7 @@
           <li>This web app can display these not well known Youtube videos in a random fashion.</li>
           <li>The user can press the "Play Random Video" button on the Home page and a random video will start playing. If the user does not like it, they can press the button again to skip to another random video selected by the random selection algorithm.</li>
           <li>The selection algorithm is based on video properties such as likes, dislikes, views, and comments.</li>
-          <li>Video Search suggests less viewed but high quality videos based on user input. User can search by title or do an advanced search.</li>
-          <li>Video Categories can found through the navigation bar or advanced search.</li>
+          <li>Video Search suggests less viewed but high quality videos based on user input. User can search by title.</li>
         </ul>
         
         <hr>
