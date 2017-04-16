@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="App3.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPS630: Web Applications</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <script src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse" id="topNavBar" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <a class="coolTitle" href="index.html"><img id="logo_home_link" src="images/logowithwords.svg"></a>
+          <ul class="nav navbar-nav">
+		    <li id="only_when_button"><a href="index.html">Home</a></li>
+            <li><a href="makeAccount.html">Make Account</a></li>
+            <li><a href="signIn.html">Sign In</a></li>
+            <li class="upper-links dropdown">
+              <a href="#" class="links dropdown-toggle" id="overridelinks" data-toggle="dropdown">Video Categories<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="profile-li"><a class="profile-links" href="#">Movies</a></li>
+                <li class="profile-li"><a class="profile-links" href="#">Music</a></li>
+                <li class="profile-li"><a class="profile-links" href="#">Games</a></li>
+                <li class="profile-li"><a class="profile-links" href="#">News</a></li>
+                <li class="profile-li"><a class="profile-links" href="#">TV</a></li>
+                <li class="profile-li"><a class="profile-links" href="#">Misc</a></li>
+              </ul>
+            </li>
+            <li class="upper-links dropdown">
+              <a href="#" class="links dropdown-toggle" id="overridelinks" data-toggle="dropdown">Video Search<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="profile-li"><a class="profile-links" href="basicSearch.html">Search by title</a></li>
+                <li class="profile-li"><a class="profile-links" href="advancedSearch.html">Advanced Search</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="aboutBut">
+            <a href="about.html" id="aboutButton">About</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <div class="jumbotron">
+      <div class="container1">
+        <h2>Advanced Search</h2>
+        <h3>Below is our user search form, here the user can adjust the search parameters as they like for a more customizable search experience.  Please complete all the feilds below.</h3>
+<br />
+<br />
+
+        <input class = "mainSearch" type="text" id="search" name="search" placeholder="Search.."> <br />
+        <br />
+
+          <input type="text" class="form-control" id="maxViews" placeholder="Maximum number of views">
+          <input type="text" class="form-control" id="minLikes" placeholder="Minimum number of likes" >
+          <input type="text" class="form-control" id="dislikePercentage" placeholder="Dislike percentage (As a percentage of likes, i.e 0.1 for 10%)">
+          <br />
+          <button onclick = "searchInput()">
+            Submit
+          </button>
+
+
+
+        <br />
+        <!-- <p><a class="btn btn-success btn-lg" onclick="searchInput(event)" role="button">Find Videos! &raquo;</a></p> -->
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-12">
+
+
+
+
+          <div class="panel panel-default">
+
+              <!-- Default panel contents -->
+              <!-- <div class="panel-heading"><h4>Video Search Results: </h4></div> -->
+
+
+              <!-- List group -->
+              <ul id="div1" class="list-group">
+
+                <p id = "errorElement">
+
+                </p>
+
+              </ul>
+
+         </div>
+
+        </div>
+
+
+      </div>
+
+
+
+
+    <div id="footer"></div>
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <script src="../../dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</html>
