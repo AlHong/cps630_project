@@ -2,6 +2,8 @@
 <html lang="en">
 
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="App3.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPS630: Web Applications</title>
@@ -57,36 +59,71 @@
       </div>
     </nav>
 
-    <div id="layout">
-      <div id="header">
-        <h1 id="logo"><a href="#" title="#"><span>Advanced Search</span></a></h1>
+
+
+    <div class="jumbotron">
+      <div class="container1">
+        <h2>Advanced Search</h2>
+        <h3>Below is our user search form, here the user can adjust the search parameters as they like for a more customizable search experience.  Please complete all the feilds below.</h3>
+<br />
+<br />
+
+        <input class = "mainSearch" type="text" id="search" name="search" placeholder="Search.."> <br />
+        <br />
+
+          <input type="text" class="form-control" id="maxViews" placeholder="Maximum number of views">
+          <input type="text" class="form-control" id="minLikes" placeholder="Minimum number of likes" >
+          <input type="text" class="form-control" id="dislikePercentage" placeholder="Dislike percentage (As a percentage of likes, i.e 0.1 for 10%)">
+          <br />
+          <button onclick = "searchInput()">
+            Submit
+          </button>
+
+
+
+        <br />
+        <!-- <p><a class="btn btn-success btn-lg" onclick="searchInput(event)" role="button">Find Videos! &raquo;</a></p> -->
       </div>
-      <form action="" class="form-horizontal">
-        <div class="mainBodyContent searchArea">
-          <div class="form-group">
-            <div class="flipkart-navbar-search smallsearch col-sm-8 col-xs-11">
-              <div class="row">
-                <input style="margin-left: 40%; width: 50%;" class="flipkart-navbar-input col-xs-11" type="" placeholder="Search video by title" name="">
-                <button class="flipkart-navbar-button col-xs-1">
-                  <span class="glyphicon glyphicon-search" aria-hidden="true">
-                </button>                                
-              </div>
-            </div>   
-          </div>
-          <input type='text' class='form-control advancedInput' id='minLikes' placeholder='Minimum number of likes'>
-          <input type='text' class='form-control advancedInput' id='maxLikes' placeholder='Maximum number of likes'>
-          <br>
-          <input type='text' class='form-control advancedInput' id='minDislikes' placeholder='Minimum number of dislikes'>
-          <input type='text' class='form-control advancedInput' id='maxDislikes' placeholder='Maximum number of dislikes'>
-          <br>
-          <input type='text' class='form-control advancedInput' id='minViews' placeholder='Minimum number of views'>
-          <input type='text' class='form-control advancedInput' id='maxViews' placeholder='Maximum number of views'>
-          <br>
-          <input type='text' class='form-control advancedInput' id='commentTerms' placeholder='terms in comments, each seperated by a comma and space'>
-        </div>
-      </form>
     </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-12">
+
+
+
+
+          <div class="panel panel-default">
+
+              <!-- Default panel contents -->
+              <!-- <div class="panel-heading"><h4>Video Search Results: </h4></div> -->
+
+
+              <!-- List group -->
+              <ul id="div1" class="list-group">
+
+                <p id = "errorElement">
+
+                </p>
+
+              </ul>
+
+         </div>
+
+        </div>
+
+
+      </div>
+
+
+
 
     <div id="footer"></div>
   </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <script src="../../dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </html>
