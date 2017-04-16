@@ -20,7 +20,7 @@ body{
 }
 
 input[type=text]:focus {
-    width: 100%;
+    width: 80%;
 }
 .jumbotron{
   text-align: center;
@@ -51,4 +51,8 @@ iframe{
 .list-group-item{
   background-color: #e8f8ff;
   font-size: 120%;
+}
+
+.form-control{
+  width: 70%;
 }
