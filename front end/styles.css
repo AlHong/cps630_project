@@ -54,5 +54,6 @@ iframe{
 }
 
 .form-control{
+  margin:auto;
   width: 70%;
 }
